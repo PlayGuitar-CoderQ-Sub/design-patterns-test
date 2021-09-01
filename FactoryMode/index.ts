@@ -41,13 +41,13 @@ class ConcreteProduct2 implements Product {
 }
 
 // TODO: 实现
-function clientCode(creator: Creator) {
+function clientCode2(creator: Creator) {
   console.log('客户: 我不知道创造者的类别，但它仍然工作。');
   console.log(creator.someOperation());
 }
 
 console.log("使用创造者1");
-clientCode(new ConcreteCreator1())
+clientCode2(new ConcreteCreator1())
 console.log("-------------------------");
 console.log("使用创造者2");
-clientCode(new ConcreteCreator2())
+clientCode2(new ConcreteCreator2())
